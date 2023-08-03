@@ -1,8 +1,8 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Edu_SA_Beginner } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Edu_SA_Beginner({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Feature Collection",
@@ -16,7 +16,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={inter.className + " w-[100vw] h-[100vh] bg-black text-white"}
+      >
+        {children}
+      </body>
     </html>
   );
 }

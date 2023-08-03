@@ -20,4 +20,15 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
+
+/* ------------ Exapanding Card ------------   */
+.expanding-card {
+  transition: 0.4s width ease-in;
+}
+.expanding-card-title {
+  transition: 0.4s opacity ease-in;
+}
+
+/* ------------ Exapanding Card End------------   */
